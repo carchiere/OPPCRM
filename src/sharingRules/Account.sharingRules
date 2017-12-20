@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>PropTrack_ShareFederalAccountsWithOPP_RW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>None</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>PropTrack - Share Federal Accounts with Opp users - Read/Write Access</description>
+        <label>PropTrack-ShareFederalAccountsWithOPP-RW</label>
+        <sharedTo>
+            <group>PropTrack_OPP_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Federal</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

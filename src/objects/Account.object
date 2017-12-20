@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AccountLevel__c</fullName>
+        <description>Determines the level of the account. Top-Level implies Top Federal Account or State Account. Level 2 implies Agency/Bureau level account or City level account</description>
+        <externalId>false</externalId>
+        <formula>IF( AND( RecordType.Name = &apos;Federal&apos;,  ISBLANK( ParentId ) ) , &apos;Top-Level&apos;,  IF(AND( RecordType.Name = &apos;Federal&apos;,  ISBLANK(  Parent.ParentId ) ), &apos;Level 2&apos; , &apos;&apos;) )</formula>
+        <inlineHelpText>Determines the level of the account 
+# Top-Level implies Top Federal Account or State Account 
+# Level 2 implies Agency/Bureau level account or City level account</inlineHelpText>
+        <label>Account Level</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Asset.OPP_Asset_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Proposal_Tracker_Console</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Account.AccountLevel__c</members>
+        <members>Asset.Request_Date__c</members>
+        <members>Asset.Additional_Resources_URL__c</members>
+        <members>Asset.Domain__c</members>
+        <members>Asset.Event_Material__c</members>
+        <members>Asset.Event_Space_Rental__c</members>
+        <members>Asset.Handle__c</members>
+        <members>Asset.Homepage__c</members>
+        <members>Asset.Level_Of_Partnership__c</members>
+        <members>Asset.Num_Of_Active_Days__c</members>
+        <members>Asset.Phase__c</members>
+        <members>Asset.SERP_URL__c</members>
+        <members>Asset.Search_Supports__c</members>
+        <members>Asset.Start_Date__c</members>
+        <members>Asset.Sub_domain__c</members>
+        <members>Asset.Tags__c</members>
+        <members>Asset.Team_Member_Time_Commitment__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>OPP_Console_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>PropTrack_OPP_Users</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>Account-Federal</members>
+        <members>Asset-OPP Digital Search Asset Layout</members>
+        <members>Asset-OPP Marketing Outreach Asset Layout</members>
+        <members>Contact-Contact Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>PropTrack_OPP_Digital_Search_User_CRE</members>
+        <members>PropTrack_OPP_MarketingOutreach_User_CRE</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Asset.OPP_Digital_Search</members>
+        <members>Asset.OPP_Marketing_Outreach</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Account.PropTrack_ShareFederalAccountsWithOPP_RW</members>
+        <members>Contact.PropTrack_ShareFedAndGSAcontactsWithOPP_RW</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <types>
+        <members>AssetStatus</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>New_OPP_Digital_Search_Asset</members>
+        <members>New OPP Marketing Outreach Asset</members>
+        <name>QuickAction</name>
+    </types>
+    <version>40.0</version>
+</Package>

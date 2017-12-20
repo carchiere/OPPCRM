@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayouts>
+        <fullName>OPP_Asset_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Status</fields>
+        <fields>AccountId</fields>
+        <fields>ContactId</fields>
+        <label>OPP Asset Compact Layout</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Additional_Resources_URL__c</fullName>
+        <description>Documentation or Admin Center URL</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Documentation or Admin Center URL</inlineHelpText>
+        <label>Additional Resources URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Domain__c</fullName>
+        <description>Domain used by OPP Digital Search</description>
+        <externalId>false</externalId>
+        <label>Domain</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Material__c</fullName>
+        <description>Event Materials for OPP Marketing Outreach</description>
+        <externalId>false</externalId>
+        <label>Event Material</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Space_Rental__c</fullName>
+        <description>Event Space / Rental for OPP Marketing Outreach</description>
+        <externalId>false</externalId>
+        <label>Event Space Rental</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Handle__c</fullName>
+        <description>Handle used by OPP Digital Search</description>
+        <externalId>false</externalId>
+        <label>Handle</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Homepage__c</fullName>
+        <description>Homepage URL used by OPP Digital Search</description>
+        <externalId>false</externalId>
+        <label>Homepage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Level_Of_Partnership__c</fullName>
+        <description>Level of Partnership - used by OPP Marketing Outreach</description>
+        <externalId>false</externalId>
+        <label>Level Of Partnership</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>One Time Event</fullName>
+                    <default>false</default>
+                    <label>One Time Event</label>
+                </value>
+                <value>
+                    <fullName>One Time Campaign</fullName>
+                    <default>false</default>
+                    <label>One Time Campaign</label>
+                </value>
+                <value>
+                    <fullName>Ongoing Campaign Support</fullName>
+                    <default>false</default>
+                    <label>Ongoing Campaign Support</label>
+                </value>
+                <value>
+                    <fullName>Full-time Support</fullName>
+                    <default>false</default>
+                    <label>Full-time Support</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Num_Of_Active_Days__c</fullName>
+        <description>Number of Active Days for OPP Marketing Research</description>
+        <externalId>false</externalId>
+        <formula>IF(  ISBLANK(UsageEndDate) , TODAY() - Start_Date__c, UsageEndDate -Start_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label># Of Active Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phase__c</fullName>
+        <description>Phase field used by OPP Marketing Outreach</description>
+        <externalId>false</externalId>
+        <label>Phase</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Intake</fullName>
+                    <default>true</default>
+                    <label>Intake</label>
+                </value>
+                <value>
+                    <fullName>Evaluation</fullName>
+                    <default>false</default>
+                    <label>Evaluation</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>Execution</fullName>
+                    <default>false</default>
+                    <label>Execution</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductFamily</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Request_Date__c</fullName>
+        <description>Request Date for OPP Marketing</description>
+        <externalId>false</externalId>
+        <label>Request Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SERP_URL__c</fullName>
+        <description>SERP URL used by OPP Digital Search</description>
+        <externalId>false</externalId>
+        <label>SERP URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Search_Supports__c</fullName>
+        <description>Search Supports for OPP Digital Marketing</description>
+        <externalId>false</externalId>
+        <label>Search Supports</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>Date a service starts for OPP Marketing Outreach</description>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sub_domain__c</fullName>
+        <description>Sub-domain used by OPP Digital Search</description>
+        <externalId>false</externalId>
+        <label>Sub-domain</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tags__c</fullName>
+        <description>Tags used by OPP Digital Search</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a comma separated list of Tags.</inlineHelpText>
+        <label>Tags</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Team_Member_Time_Commitment__c</fullName>
+        <description>Team Member Time Commitment for OPP Marketing Research</description>
+        <externalId>false</externalId>
+        <label>Team Member Time Commitment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>XS</fullName>
+                    <default>false</default>
+                    <label>XS</label>
+                </value>
+                <value>
+                    <fullName>S</fullName>
+                    <default>false</default>
+                    <label>S</label>
+                </value>
+                <value>
+                    <fullName>M</fullName>
+                    <default>false</default>
+                    <label>M</label>
+                </value>
+                <value>
+                    <fullName>L</fullName>
+                    <default>false</default>
+                    <label>L</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>OPP_Digital_Search</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>OPP_Asset_Compact_Layout</compactLayoutAssignment>
+        <description>Asset Recordtype for OPP Digital Search</description>
+        <label>OPP Digital Search</label>
+        <picklistValues>
+            <picklist>Level_Of_Partnership__c</picklist>
+            <values>
+                <fullName>Full-time Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ongoing Campaign Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Phase__c</picklist>
+            <values>
+                <fullName>Intake</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Team_Member_Time_Commitment__c</picklist>
+            <values>
+                <fullName>L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OPP_Marketing_Outreach</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>OPP_Asset_Compact_Layout</compactLayoutAssignment>
+        <description>Recordtype for Asset - OPP Marketing Outreach</description>
+        <label>OPP Marketing Outreach</label>
+        <picklistValues>
+            <picklist>Level_Of_Partnership__c</picklist>
+            <values>
+                <fullName>Full-time Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Time Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ongoing Campaign Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Phase__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evaluation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intake</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Accept</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Accept-Reassess</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Defer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Team_Member_Time_Commitment__c</picklist>
+            <values>
+                <fullName>L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>
