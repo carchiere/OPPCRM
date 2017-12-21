@@ -56,7 +56,7 @@
                 <field>Quantity</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Tags__c</field>
             </layoutItems>
             <layoutItems>

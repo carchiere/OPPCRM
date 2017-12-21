@@ -12,8 +12,8 @@
         <label>Marketing Outreach</label>
     </standardValue>
     <standardValue>
-        <fullName>Digital Search</fullName>
+        <fullName>Search.gov</fullName>
         <default>false</default>
-        <label>Digital Search</label>
+        <label>Search.gov</label>
     </standardValue>
 </StandardValueSet>
