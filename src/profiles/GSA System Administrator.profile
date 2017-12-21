@@ -7,7 +7,7 @@
         <recordType>Asset.OPP_Digital_Search</recordType> 
     </layoutAssignments>
     <layoutAssignments> 
-        <layout>Asset-OPP Digital Search Asset Layout</layout> 
+        <layout>Asset-OPP Marketing Outreach Asset Layout</layout> 
         <recordType>Asset.OPP_Marketing_Outreach</recordType> 
 </layoutAssignments>
 </Profile>
