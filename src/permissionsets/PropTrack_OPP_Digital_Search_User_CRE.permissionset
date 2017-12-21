@@ -4,6 +4,10 @@
         <application>Proposal_Tracker_Console</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Proposal_Tracker</application>
+        <visible>true</visible>
+    </applicationVisibilities>
     <description>Proposal Tracker Permission Set for OPP - Digital Search Users</description>
     <fieldPermissions>
         <editable>false</editable>

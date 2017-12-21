@@ -10,6 +10,7 @@
     </types>
     <types>
         <members>Account.AccountLevel__c</members>
+        <members>Asset.Request_Date__c</members>
         <members>Asset.Additional_Resources_URL__c</members>
         <members>Asset.Domain__c</members>
         <members>Asset.Event_Material__c</members>
@@ -19,15 +20,14 @@
         <members>Asset.Level_Of_Partnership__c</members>
         <members>Asset.Num_Of_Active_Days__c</members>
         <members>Asset.Phase__c</members>
-        <members>Asset.Product2Id</members>
-        <members>Asset.ProductFamily</members>
-        <members>Asset.Request_Date__c</members>
         <members>Asset.SERP_URL__c</members>
         <members>Asset.Search_Supports__c</members>
         <members>Asset.Start_Date__c</members>
         <members>Asset.Sub_domain__c</members>
         <members>Asset.Tags__c</members>
         <members>Asset.Team_Member_Time_Commitment__c</members>
+        <members>Asset.ProductFamily</members>
+        <members>Asset.Product2Id</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -51,11 +51,6 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>New_OPP_Digital_Search_Asset</members>
-        <members>New_OPP_Marketing_Outreach_Asset</members>
-        <name>QuickAction</name>
-    </types>
-    <types>
         <members>Asset.OPP_Digital_Search</members>
         <members>Asset.OPP_Marketing_Outreach</members>
         <name>RecordType</name>
@@ -69,6 +64,16 @@
         <members>AssetStatus</members>
         <members>Product2Family</members>
         <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>New_OPP_Digital_Search_Asset</members>
+        <members>New_OPP_Marketing_Outreach_Asset</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>GSA System Administrator</members>
+        <members>GSA Standard Basic User</members>
+        <name>Profile</name>
     </types>
     <version>40.0</version>
 </Package>
