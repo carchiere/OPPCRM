@@ -70,5 +70,9 @@
         <members>New_OPP_Marketing_Outreach_Asset</members>
         <name>QuickAction</name>
     </types>
+    </types>
+        <members>GSA System Administrator</members>
+        <name>Profile</name>
+    </types>
     <version>40.0</version>
 </Package>
